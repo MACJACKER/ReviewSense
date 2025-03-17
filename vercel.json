@@ -7,6 +7,9 @@
   "framework": "vite",
   "github": {
     "silent": true,
-    "autoAlias": true
-  }
+    "autoAlias": true,
+    "enabled": true
+  },
+  "trailingSlash": false,
+  "cleanUrls": true
 } 

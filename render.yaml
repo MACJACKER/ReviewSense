@@ -3,7 +3,7 @@ services:
     name: sentiment-analysis-api
     env: python
     buildCommand: pip install -r backend/requirements.txt && mkdir -p /opt/render/project/src/model && cp -r model/fine_tuned_model /opt/render/project/src/model/
-    startCommand: cd backend && uvicorn app:app --host 0.0.0.0 --port $PORT
+    startCommand: cd backend && uvicorn app:app --host 0.0.0.0 --port 8001
     envVars:
       - key: DATABASE_URL
         fromDatabase:
@@ -13,6 +13,8 @@ services:
         value: /opt/render/project/src/model/fine_tuned_model
       - key: SECRET_KEY
         generateValue: true
+      - key: PORT
+        value: 8001
 
 databases:
   - name: sentiment-db

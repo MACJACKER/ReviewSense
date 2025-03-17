@@ -35,6 +35,11 @@ origins = [
     "http://localhost:5175",
     "https://sentiment-analysis-frontend.vercel.app",  # Vercel deployment URL
     "https://sentiment-analysis-app.vercel.app",       # Alternative Vercel URL
+    "https://reviewsense.vercel.app",                  # Project name based URL
+    "https://reviewsense-git-main-macjacker.vercel.app", # Branch based URL
+    "https://reviewsense-macjacker.vercel.app",        # Username based URL
+    "https://reviewsense-*-macjacker.vercel.app",      # Wildcard for preview deployments
+    "https://*.vercel.app"                             # Any Vercel app (more permissive)
 ]
 
 app.add_middleware(
@@ -317,4 +322,11 @@ async def analyze_sentiment_public(
         sentiment=sentiment,
         confidence=confidence,
         timestamp=datetime.now()
-    ) 
+    )
+
+# Add this at the end of the file
+if __name__ == "__main__":
+    import uvicorn
+    import os
+    port = int(os.getenv("PORT", 8001))
+    uvicorn.run("app:app", host="0.0.0.0", port=port, reload=True) 
