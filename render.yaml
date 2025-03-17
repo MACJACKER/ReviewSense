@@ -1,0 +1,21 @@
+services:
+  - type: web
+    name: sentiment-analysis-api
+    env: python
+    buildCommand: pip install -r backend/requirements.txt && mkdir -p /opt/render/project/src/model && cp -r model/fine_tuned_model /opt/render/project/src/model/
+    startCommand: cd backend && uvicorn app:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: DATABASE_URL
+        fromDatabase:
+          name: sentiment-db
+          property: connectionString
+      - key: MODEL_PATH
+        value: /opt/render/project/src/model/fine_tuned_model
+      - key: SECRET_KEY
+        generateValue: true
+
+databases:
+  - name: sentiment-db
+    databaseName: sentiment_db
+    user: postgres
+    plan: free 

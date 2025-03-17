@@ -1,0 +1,18 @@
+Model Evaluation Results
+=======================
+Date: 2025-03-17 00:35:00
+Model: fine-tuned BERT for sentiment analysis
+
+Metrics:
+- accuracy: 0.9245
+- f1: 0.9187
+- precision: 0.9312
+- recall: 0.9065
+
+Test set size: 1000 samples
+Training time: 45 minutes
+
+Notes:
+- Model shows good performance on both positive and negative sentiments
+- Some confusion with neutral statements
+- Consider adding more neutral examples in the next training iteration 

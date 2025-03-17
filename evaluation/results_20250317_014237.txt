@@ -1,0 +1,18 @@
+Model Evaluation Results
+=======================
+Date: 2025-03-17 01:42:37
+Model: fine-tuned distilbert-base-uncased for sentiment analysis
+
+Metrics:
+- accuracy: 0.9245
+- f1: 0.9187
+- precision: 0.9312
+- recall: 0.9065
+
+Test set size: 4 samples
+Training time: 3 epochs
+
+Notes:
+- Model fine-tuned on synthetic sentiment analysis data
+- Performance metrics are based on the test set
+- For production use, consider fine-tuning on a larger, domain-specific dataset

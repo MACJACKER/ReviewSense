@@ -1,0 +1,18 @@
+To create a dashboard image for the README:
+
+1. Start the application using the run.ps1 script
+2. Register a new account or log in
+3. Navigate to the dashboard
+4. Enter some text in the sentiment analysis input field
+5. Click "Analyze Sentiment" to see the results
+6. Take a screenshot of the entire dashboard
+7. Save the screenshot as "dashboard.png" in the docs/images directory
+8. This image will be displayed in the README.md file
+
+Note: The dashboard image should show:
+- The header with user information
+- The sentiment analysis input field
+- The analysis results with sentiment and confidence
+- The model information sidebar
+
+This will provide a visual representation of the application's functionality. 

@@ -1,0 +1,10 @@
+This is a placeholder for the confusion matrix image.
+In a real implementation, this would be a PNG file showing the confusion matrix visualization.
+
+The confusion matrix would show:
+- True Positives: 450
+- False Positives: 35
+- True Negatives: 465
+- False Negatives: 50
+
+The visualization would use a heatmap with color intensity representing the number of predictions in each category. 

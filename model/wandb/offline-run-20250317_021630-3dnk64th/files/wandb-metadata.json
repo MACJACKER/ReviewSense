@@ -1,0 +1,39 @@
+{
+    "os": "Windows-11-10.0.26100-SP0",
+    "python": "3.12.0",
+    "heartbeatAt": "2025-03-17T06:16:30.896261",
+    "startedAt": "2025-03-17T06:16:30.825798",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "C:\\Users\\abhin\\OneDrive\\Desktop\\Sentiment Analysis\\model\\fine_tune.py",
+    "codePathLocal": "fine_tune.py",
+    "codePath": "fine_tune.py",
+    "host": "Abhinav",
+    "username": "abhin",
+    "executable": "C:\\Users\\abhin\\AppData\\Local\\Programs\\Python\\Python312\\python.exe",
+    "cpu_count": 4,
+    "cpu_count_logical": 8,
+    "cpu_freq": {
+        "current": 2419.0,
+        "min": 0.0,
+        "max": 2419.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2419.0,
+            "min": 0.0,
+            "max": 2419.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 221.23046493530273,
+            "used": 165.18800354003906
+        }
+    },
+    "memory": {
+        "total": 15.74100112915039
+    }
+}
